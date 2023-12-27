@@ -22,7 +22,7 @@ jobs:
 
     - name: Install dbt
       run: |
-        pip install dbt-core
+        # pip install dbt-core
         pip install dbt-snowflake
         
 
