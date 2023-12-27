@@ -1,5 +1,3 @@
---saipranay
-
 with emp_address_raw AS(
     SELECT $1
     from @MYDB.POC.EMP_POC/t2.json
