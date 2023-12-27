@@ -1,0 +1,41 @@
+name: Run dbt
+
+on:
+  push:
+    branches:
+      - main  # Adjust the branch as needed
+    paths:
+      - 'empTransformDBT/**'
+
+jobs:
+  run-dbt:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8  # Adjust the Python version as needed
+
+    - name: Install dbt
+      run: |
+        pip install dbt-core
+        pip install dbt-snowflake
+        
+
+    - name: Run dbt
+      run: |
+        pwd
+        dir
+        cd empTransformDBT
+        # dbt --help
+        # cd /saipranaychennuri/dbt_demo/tree/main/dbtlearn
+        dbt run
+
+    # - name: Test dbt
+    #   run: |
+    #     cd dbtlearn
+    #     dbt test
