@@ -31,7 +31,7 @@ jobs:
         pwd
         dir
         cd empTransformDBT
-        python main.py
+        # python main.py
         # dbt --help
         # cd /saipranaychennuri/dbt_demo/tree/main/dbtlearn
         dbt run
@@ -40,3 +40,4 @@ jobs:
     #   run: |
     #     cd dbtlearn
     #     dbt test
+
