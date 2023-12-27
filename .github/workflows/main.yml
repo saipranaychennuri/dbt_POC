@@ -3,7 +3,7 @@ name: Run dbt
 on:
   push:
     branches:
-      - saipranay #main  # Adjust the branch as needed
+      - main  # Adjust the branch as needed
     paths:
       - 'empTransformDBT/**'
 
