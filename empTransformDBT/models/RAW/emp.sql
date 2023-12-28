@@ -2,7 +2,7 @@ with emp as(
     SELECT $1
     from @MYDB.POC.EMP_POC/t1.json
     (FILE_FORMAT =>
-    mydb.poc.json_1
+    mydb.utils.json_format
     ) 
 )
 select 
