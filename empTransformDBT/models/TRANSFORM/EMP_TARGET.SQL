@@ -1,0 +1,30 @@
+with emp_target as(
+    select * from {{source('emp_source','emp')}}
+)
+select EmpID,
+       Name_Prefix,
+       First_Name,
+       Middle_Initial,
+       concat(Name_Prefix,' ',First_Name,' ',Middle_Initial) as fullName,
+       Gender,
+       Email,
+       Fathers_Name,
+       Mothers_Name,
+       Mothers_Maiden_Name,
+       Date_of_Birth,
+       Age_in_Yrs,
+       Weight_in_Kgs,
+       date_of_joining,
+       Year_of_Joining,
+       Month_of_Joining,
+       Month_Name_of_Joining,
+       Short_Month,
+       Day_of_Joining,
+       Age_in_Company,
+       Salary,
+       Last_per_Hike,
+       Salary*(to_decimal(trim(Last_per_Hike,'%'))) as "Salary%Hike",
+       Salary*Age_in_Company as PerformanceBonus,
+       UserName,
+       Password
+       from emp_target
