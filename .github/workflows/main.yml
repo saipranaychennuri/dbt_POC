@@ -24,7 +24,10 @@ jobs:
       run: |
         # pip install dbt-core
         pip install dbt-snowflake
-        
+    - name: Install snowmask and utils
+      run: |
+        pip install dbt_snow_mask
+        pip install dbt-utils
 
     - name: Run dbt
       run: |
