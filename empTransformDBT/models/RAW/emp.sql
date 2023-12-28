@@ -34,4 +34,4 @@ $1:"Father's Name"::varchar as Fathers_Name,
 $1:"Gender"::varchar as Gender,
 $1:"Half of Joining"::varchar as Half_of_Joining,
 $1:"Last % Hike"::varchar as Last_per_Hike
-from emp;
+from emp
