@@ -1,4 +1,4 @@
---Hi dhostho
+
 with emp as(
     SELECT $1
     from @MYDB.POC.EMP_POC/t1.json

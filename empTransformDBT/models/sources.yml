@@ -1,0 +1,13 @@
+version: 2
+
+
+sources:
+  - name: emp_source
+    database: mydb
+    schema: raw
+    tables:     
+      - name: emp
+        columns:
+          - name: Password
+            meta:
+              masking_policy: password_mask

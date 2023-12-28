@@ -34,6 +34,8 @@ models:
   empTransformDBT:
     RAW:
       +materialized: table
+    TRANSFORM:
+      +materialized: table
     # Config indicated by + and applies to all files under models/example/
     # example:
     #   +materialized: view
