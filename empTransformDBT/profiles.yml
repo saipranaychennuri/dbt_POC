@@ -15,7 +15,7 @@ empTransformDBT:
       database: mydb
       password: XDgczKW5nRYVj75
       role: poc_role
-      schema: raw
+      schema: transform
       threads: 1
       type: snowflake
       user: saipranay
