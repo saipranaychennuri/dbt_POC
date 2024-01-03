@@ -1,0 +1,6 @@
+packages:
+- package: entechlog/dbt_snow_mask
+  version: 0.1.8
+- git: https://github.com/dbt-labs/dbt-utils.git
+  revision: 064c2abee80816ea855de32e66e54e96d9916677
+sha1_hash: 3317a62d8611b83f9a3e686f49a4d9beae04496f

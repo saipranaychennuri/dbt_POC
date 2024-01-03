@@ -9,7 +9,7 @@ select
     NAME_PREFIX,
     FIRST_NAME,
     MIDDLE_INITIAL,
-    LAST_NAME,
+    -- LAST_NAME,
     SSN,
     PHONE_NO,
     PLACE_NAME,

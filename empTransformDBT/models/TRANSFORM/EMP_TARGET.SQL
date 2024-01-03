@@ -1,5 +1,13 @@
+{{ config(
+    pre_hook=[
+      "{{ dbt_snow_mask.create_masking_policy() }}"
+    ],
+    post_hook=[
+      "{{ dbt_snow_mask.apply_masking_policy() }}"
+    ]
+) }}
 with emp_target as(
-    select * from {{source('emp_source','emp')}}
+    select * from {{ref('emp')}}
 )
 select EmpID,
        Name_Prefix,

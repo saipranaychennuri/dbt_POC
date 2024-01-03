@@ -1,6 +1,6 @@
 packages:
   - package: entechlog/dbt_snow_mask
-    version: 0.1.7
+    version: 0.1.8
  
   - git: "https://github.com/dbt-labs/dbt-utils.git"
     revision: 0.9.2
