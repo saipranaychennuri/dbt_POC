@@ -47,7 +47,7 @@ parsedatetime==2.6
 pathspec==0.11.2
 Pillow==10.1.0
 platformdirs==3.11.0
-protobuf==4.25.1
+protobuf==5.29.6
 pyarrow==10.0.1
 PyAutoGUI==0.9.54
 pycparser==2.21
